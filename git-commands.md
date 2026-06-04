@@ -41,3 +41,4 @@ git add is a multipurpose command, you use it to begin tracking new files, to 
 - ```git diff``` : shows what exactly is changed, to be stages, to be committed etc. rather than file names.
 
 
+- ```git rm``` : remove files from staging area and also removes the file from your working directory.
