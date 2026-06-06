@@ -1,0 +1,36 @@
+<!doctype html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Page</title>
+  </head>
+  <body>
+    <main>
+      <h1>Registration form</h1>
+      <form action="/" method="post">
+        <label for="name">Enter your name:</label>
+        <input type="text" name="name" id="name" /><br /><br />
+
+        <label for="email">Enter your email:</label>
+        <input type="email" name="email" id="email" required /><br /><br />
+
+        <label for="password">Enter your password:</label>
+        <input type="password" name="password" id="password" minlength="8" pattern=".*\d+.*" />
+        <br /><br />
+
+        <label for="age">Enter your age:</label>
+        <input type="number" name="age" id="age" min="18" max="99" /><br /><br />
+
+        <label for="url">Url to your website:</label>
+        <input type="url" name="url" id="url" /><br /><br />
+
+        <label for="date">Date of Birth</label>
+        <input type="date" name="date" id="date" max="2026-06-06" /><br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
