@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Media Page</h1>
+    </header>
+    <main>
+      <video
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        controls
+        width="640"
+        poster="https://picsum.photos/640/350?random=1"
+      >
+        <track kind="captions" src="captions.vtt" srclang="en" label="English" default />
+
+        <p>
+          This is a sample video. For unsupported browsers, watch the video by clicking
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4">here</a>
+        </p>
+      </video>
+
+      <details>
+        <summary>Video Summary:</summary>
+        <p>An animal looking into the butterfly.</p>
+        <p>Suddenly an apple falls to the ground.</p>
+      </details>
+
+      <br /><br />
+
+      <audio controls>
+        <source
+          src="https://upload.wikimedia.org/wikipedia/commons/d/de/Lorem_ipsum.ogg"
+          type="audio/mp3"
+        />
+        <source
+          src="https://upload.wikimedia.org/wikipedia/commons/d/de/Lorem_ipsum.ogg"
+          type="audio/ogg"
+        />
+        <p>
+          Your browser doesn't support this audio file. Here is a
+          <a href="https://upload.wikimedia.org/wikipedia/commons/d/de/Lorem_ipsum.ogg"
+            >link to the audio</a
+          >
+          instead.
+        </p>
+      </audio>
+
+      <details>
+        <summary>Summary of Audio file:</summary>
+        <p>This is an audio of Lorem Ipsum</p>
+      </details>
+    </main>
+  </body>
+</html>
