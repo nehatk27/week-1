@@ -34,17 +34,24 @@
         <fieldset>
           <legend>Step 2: Work Experience</legend>
 
-          <label for="current-role">Enter your current role</label>
+          <label for="current-role">Enter your current role:</label>
           <input type="text" name="current-role" id="current-role" /><br /><br />
 
-          <label for="current-company">Enter your Current Company</label>
+          <label for="current-company">Enter your Current Company:</label>
           <input type="text" name="current-company" id="current-company" /><br /><br />
 
-          <label for="experience">Enter your years of Experience</label>
+          <label for="experience">Enter your years of Experience:</label>
           <input type="number" name="experience" id="experience" /><br /><br />
 
-          <label for="key-achievements">Type your key-achievements</label>
-          <textarea name="key-achievements" id="key-achievements" cols="30" rows="4"></textarea>
+          <label for="key-achievements">Type your key-achievements:</label><br />
+          <textarea
+            name="key-achievements"
+            id="key-achievements"
+            cols="30"
+            rows="4"
+            maxlength="500"
+          ></textarea
+          ><small>Hint: Maximum characters - 500</small>
         </fieldset>
         <br />
         <fieldset>
@@ -55,7 +62,7 @@
           <label for="cover-letter">Upload your cover-letter: </label>
           <input type="file" name="cover-letter" id="cover-letter" /><br /><br />
 
-          <label for="portfolio">Enter your portfolio-url</label>
+          <label for="portfolio">Enter your portfolio-url:</label>
           <input type="url" name="portfolio" id="portfolio" />
         </fieldset>
         <button type="submit">Submit</button>
