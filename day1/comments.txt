@@ -1,0 +1,19 @@
+In lighthouse:
+  Performance = 100
+  Accessibility = 96
+  Best practices = 100
+  SEO = 91
+
+Warning: "Document does not have a main landmark." in Accessibility
+Warning: "Document does not have a meta description" in SEO
+
+Fixed the Warning through adding <main> tag and meta description in HTML document.
+
+lighthouse score updated to: 
+  Performance = 100
+  Accessibility = 100
+  Best practices = 100
+  SEO = 100
+
+
+Axe DevTools -> 0 Errors. 
