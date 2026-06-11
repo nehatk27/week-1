@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Checkout</title>
+  </head>
+  <body>
+    <header>
+      <h1>Payment Chekout Form</h1>
+    </header>
+    <main>
+      <form action="/" method="post">
+        <fieldset>
+          <legend>Delivery Address:</legend>
+          <label for="name">Enter your name:*</label>
+          <input type="text" name="name" id="name" required /><br /><br />
+
+          <label for="address">Address Lane 1*</label>
+          <input type="text" id="address" name="address" required /><br /><br />
+
+          <label for="address2">Address Lane 2</label>
+          <input type="text" id="address2" name="address2" /><br /><br />
+
+          <label for="city">City*</label>
+          <input type="text" id="city" name="city" required /><br /><br />
+
+          <label for="zip">Postal Code*</label>
+          <input type="text" id="zip" name="zip" required /><br /><br />
+
+          <label for="country">Country*</label>
+          <input list="countries" name="country" id="country" required />
+
+          <select name="countries" id="countries">
+            <option value="India"></option>
+            <option value="Pakistan"></option>
+            <option value="Nepal"></option>
+            <option value="Japan"></option>
+            <option value="China"></option>
+            <option value="Croatia"></option>
+            <option value="Austria"></option>
+            <option value="Mexico"></option>
+            <option value="Ghana"></option>
+            <option value="Brazil"></option>
+            <option value="Iraq"></option>
+            <option value="Iran"></option>
+            <option value="Germany"></option>
+            <option value="Congo"></option>
+            <option value="US"></option>
+            <option value="Norway"></option>
+            <option value="Italy"></option>
+            <option value="Australia"></option>
+            <option value="Romania"></option>
+            <option value="Chile"></option></select
+          ><br />
+
+          <small>'Fields marked * are required'​</small>
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment Details</legend>
+
+          <label for="card-number">Enter your card-number:*</label>
+          <input
+            type="number"
+            name="card-number"
+            id="card-number"
+            maxlength="16"
+            required
+          /><br /><br />
+
+          <label for="month-year">Enter Expiry month and year:*</label>
+          <input type="month" name="month-year" id="month-year" required /><br /><br />
+
+          <label for="cvv">Enter your Card-Verification-Value*</label>
+          <input
+            type="password"
+            name="cvv"
+            id="cvv"
+            required
+            maxlength="4"
+            aria-describedby="cvv-helper"
+          /><br />
+          <p id="cvv-helper" role="tooltip">'3 or 4 digits on the back​ ​of your card'​</p>
+
+          <small>'Fields marked * are required'</small>
+        </fieldset>
+
+        <fieldset>
+          <legend>Order Notes</legend>
+          <label for="notes">Order Notes here(optional):</label><br />
+          <textarea name="notes" id="notes" maxlength="500"></textarea><br />
+          <small>'Fields marked * are required'</small>
+        </fieldset>
+
+        <br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
